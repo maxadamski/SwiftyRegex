@@ -24,8 +24,7 @@ public struct Regex
         if result != 0 {
             var buffer = [Int8](count: 128, repeatedValue: 0)
             regerror(result, &cRegex, &buffer, sizeof(buffer.dynamicType))
-            let error = buffer.reduce("") { $0 + String(UnicodeScalar(UInt8($1))) }
-            print("@Regex.compile() - Compilation error { \(error) }")
+            print("@Regex.compile() - Compilation error { \(String(bytes: buffer)) }")
         }
         return cRegex
     }
@@ -53,8 +52,7 @@ public struct Regex
         } else {
             var buffer = [Int8](count: 128, repeatedValue: 0)
             regerror(result, &cRegex, &buffer, sizeof(buffer.dynamicType))
-            let error = buffer.reduce("") { $0 + String(UnicodeScalar(UInt8($1))) }
-            print("@Regex.match() - Execution error { \(error) }")
+            print("@Regex.match() - Execution error { \(String(bytes: buffer)) }")
             return (false, nil)
         }
     }
@@ -66,9 +64,7 @@ public struct Regex
         var offset = 0
         while var range = match(string).range {
             // Delete match from string
-            let s = string.startIndex.advancedBy(range.startIndex)
-            let e = string.startIndex.advancedBy(range.endIndex)
-            string.replaceRange(s..<e, with: "")
+            string.replaceRange(range, with: "")
             
             range.startIndex += offset
             range.endIndex += offset
@@ -81,12 +77,9 @@ public struct Regex
     /// - returns: Matching substrings.
     public func matches(string: String) -> [String]
     {
-        let ranges = self.ranges(string)
         var matches = [String]()
-        for r in ranges {
-            let s = string.startIndex.advancedBy(r.startIndex)
-            let e = string.startIndex.advancedBy(r.endIndex)
-            matches.append(string.substringWithRange(s..<e))
+        for r in ranges(string) {
+            matches.append(string.substringWithRange(r))
         }
         return matches
     }
@@ -96,9 +89,7 @@ public struct Regex
     {
         let match = self.match(string)
         if match.matches == true && match.range != nil {
-            let s = string.startIndex.advancedBy(match.range!.startIndex)
-            let e = string.startIndex.advancedBy(match.range!.endIndex)
-            string.replaceRange(s..<e, with: sub)
+            string.replaceRange(match.range!, with: sub)
         }
         return string
     }
@@ -106,11 +97,8 @@ public struct Regex
     /// - returns: `string` with all matching substrings replaced by `sub`.
     public func replaceAll(var string: String, with sub: String) -> String
     {
-        let ranges = self.ranges(string)
-        for r in ranges {
-            let s = string.startIndex.advancedBy(r.startIndex)
-            let e = string.startIndex.advancedBy(r.endIndex)
-            string.replaceRange(s..<e, with: sub)
+        for r in ranges(string) {
+            string.replaceRange(r, with: sub)
         }
         return string
     }
