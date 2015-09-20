@@ -79,7 +79,7 @@ public struct Regex
     }
     
     /// Checks if given string matches expression.
-    public func matches(string: String) -> Bool
+    public func test(string: String) -> Bool
     {
         return match(string).matches
     }

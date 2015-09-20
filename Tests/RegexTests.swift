@@ -15,29 +15,29 @@ class RegexTests: XCTestCase
     func testItMatches()
     {
         let regex = Regex("Hello, world!")
-        expect(regex.matches("Hello, world!")) == true
-        expect(regex.matches("hello, world!")) == false
+        expect(regex.test("Hello, world!")) == true
+        expect(regex.test("hello, world!")) == false
     }
     
     func testItMatches_Numbers()
     {
         let regex = Regex("hello[0-9]")
-        expect(regex.matches("hello1")) == true
-        expect(regex.matches("hello")) == false
+        expect(regex.test("hello1")) == true
+        expect(regex.test("hello")) == false
     }
     
     func testItMatches_Or_Optional()
     {
         let regex = Regex("test(ed|er)?")
-        expect(regex.matches("tested")) == true
-        expect(regex.matches("test")) == true
+        expect(regex.test("tested")) == true
+        expect(regex.test("test")) == true
     }
     
     func testItMatches_IgnoreCase()
     {
         let regex = Regex("Hello, world!", flags: [.Extended, .IgnoreCase])
-        expect(regex.matches("Hello, world!")) == true
-        expect(regex.matches("hello, world!")) == true
+        expect(regex.test("Hello, world!")) == true
+        expect(regex.test("hello, world!")) == true
     }
     
     func testItGetsRange()
@@ -55,7 +55,7 @@ class RegexTests: XCTestCase
     func testItReportsInvalidExpression()
     {
         let regex = Regex("[a-Z]")
-        expect(regex.matches("a")) == false
+        expect(regex.test("a")) == false
     }
     
     func testOperator()
