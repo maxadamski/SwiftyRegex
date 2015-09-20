@@ -103,6 +103,18 @@ public struct Regex
         return string
     }
     
+    /// - returns: `string` with all matching substrings replaced by `sub`.
+    public func replaceAll(var string: String, with sub: String) -> String
+    {
+        let ranges = self.ranges(string)
+        for r in ranges {
+            let s = string.startIndex.advancedBy(r.startIndex)
+            let e = string.startIndex.advancedBy(r.endIndex)
+            string.replaceRange(s..<e, with: sub)
+        }
+        return string
+    }
+    
     /// Checks if given string matches expression.
     public func test(string: String) -> Bool
     {

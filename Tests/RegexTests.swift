@@ -70,6 +70,12 @@ class RegexTests: XCTestCase
         expect(regex.replace("John Smith", with: "Ellen")) == "Ellen Smith"
     }
     
+    func testItReplacesAllMatches()
+    {
+        let regex = Regex("2")
+        expect(regex.replaceAll("102022", with: "1")) == "101011"
+    }
+    
     func testItReportsInvalidExpression()
     {
         let regex = Regex("[a-Z]")
