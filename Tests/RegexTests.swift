@@ -57,4 +57,11 @@ class RegexTests: XCTestCase
         let regex = Regex("[a-Z]")
         expect(regex.matches("a")) == false
     }
+    
+    func testOperator()
+    {
+        let regex = Regex("[A-Z]")
+        expect("ABC" =~ regex) == true
+        expect("ABC" =~ "[A-Z]") == true
+    }
 }

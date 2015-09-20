@@ -14,6 +14,7 @@
 		5076E8E11BAE1AA800B9D16E /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5076E8DD1BAE1A8800B9D16E /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5076E8E31BAE1DB900B9D16E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8E21BAE1DB900B9D16E /* Regex.swift */; settings = {ASSET_TAGS = (); }; };
 		5076E8E51BAE1DE500B9D16E /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8E41BAE1DE500B9D16E /* Flags.swift */; settings = {ASSET_TAGS = (); }; };
+		50A4AC151BAE369600C1AA4E /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4AC141BAE369600C1AA4E /* Operators.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5076E8DD1BAE1A8800B9D16E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		5076E8E21BAE1DB900B9D16E /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		5076E8E41BAE1DE500B9D16E /* Flags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		50A4AC141BAE369600C1AA4E /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				5076E8C81BAE196500B9D16E /* Info.plist */,
 				5076E8C91BAE196500B9D16E /* SwiftRegex.h */,
+				50A4AC141BAE369600C1AA4E /* Operators.swift */,
 				5076E8E21BAE1DB900B9D16E /* Regex.swift */,
 				5076E8E41BAE1DE500B9D16E /* Flags.swift */,
 			);
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5076E8E31BAE1DB900B9D16E /* Regex.swift in Sources */,
+				50A4AC151BAE369600C1AA4E /* Operators.swift in Sources */,
 				5076E8E51BAE1DE500B9D16E /* Flags.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +431,7 @@
 				5076E8DA1BAE198800B9D16E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
