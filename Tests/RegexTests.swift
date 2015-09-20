@@ -52,6 +52,18 @@ class RegexTests: XCTestCase
         expect(regex.ranges("_hello_hello")) == [1...5, 7...11]
     }
     
+    func testItGetsSubstrings()
+    {
+        let regex = Regex("hello")
+        expect(regex.matches("hello, world")) == ["hello"]
+    }
+    
+    func testItGetsSubstrings_Multiple()
+    {
+        let regex = Regex("hello")
+        expect(regex.matches("_hello_hello")) == ["hello", "hello"]
+    }
+    
     func testItReportsInvalidExpression()
     {
         let regex = Regex("[a-Z]")

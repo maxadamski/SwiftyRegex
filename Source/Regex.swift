@@ -78,6 +78,19 @@ public struct Regex
         return ranges
     }
     
+    /// - returns: Matching substrings.
+    public func matches(string: String) -> [String]
+    {
+        let ranges = self.ranges(string)
+        var matches = [String]()
+        for r in ranges {
+            let s = string.startIndex.advancedBy(r.startIndex)
+            let e = string.startIndex.advancedBy(r.endIndex)
+            matches.append(string.substringWithRange(s..<e))
+        }
+        return matches
+    }
+    
     /// Checks if given string matches expression.
     public func test(string: String) -> Bool
     {
