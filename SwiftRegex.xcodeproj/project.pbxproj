@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5027B9E01BAEDB3E00B1EB2A /* String+SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */; settings = {ASSET_TAGS = (); }; };
+		5027B9E21BAEDE8B00B1EB2A /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */; settings = {ASSET_TAGS = (); }; };
 		5076E8CB1BAE196500B9D16E /* SwiftRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076E8C91BAE196500B9D16E /* SwiftRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5076E8D51BAE198800B9D16E /* SwiftRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8BC1BAE194200B9D16E /* SwiftRegex.framework */; settings = {ASSET_TAGS = (); }; };
 		5076E8DC1BAE19D800B9D16E /* RegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8DB1BAE19D800B9D16E /* RegexTests.swift */; settings = {ASSET_TAGS = (); }; };
@@ -41,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5027B9DE1BAED46600B1EB2A /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = SOURCE_ROOT; };
+		5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftRegex.swift"; sourceTree = "<group>"; };
+		5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		5076E8BC1BAE194200B9D16E /* SwiftRegex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftRegex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5076E8C81BAE196500B9D16E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5076E8C91BAE196500B9D16E /* SwiftRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftRegex.h; sourceTree = "<group>"; };
@@ -95,8 +100,10 @@
 		5076E8C71BAE196500B9D16E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5027B9DE1BAED46600B1EB2A /* Playground.playground */,
 				5076E8C81BAE196500B9D16E /* Info.plist */,
 				5076E8C91BAE196500B9D16E /* SwiftRegex.h */,
+				5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */,
 				50A4AC141BAE369600C1AA4E /* Operators.swift */,
 				5076E8E21BAE1DB900B9D16E /* Regex.swift */,
 				5076E8E41BAE1DE500B9D16E /* Flags.swift */,
@@ -109,6 +116,7 @@
 			children = (
 				5076E8D41BAE198800B9D16E /* Info.plist */,
 				5076E8DB1BAE19D800B9D16E /* RegexTests.swift */,
+				5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5027B9E01BAEDB3E00B1EB2A /* String+SwiftRegex.swift in Sources */,
 				5076E8E31BAE1DB900B9D16E /* Regex.swift in Sources */,
 				50A4AC151BAE369600C1AA4E /* Operators.swift in Sources */,
 				5076E8E51BAE1DE500B9D16E /* Flags.swift in Sources */,
@@ -232,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5027B9E21BAEDE8B00B1EB2A /* StringTests.swift in Sources */,
 				5076E8DC1BAE19D800B9D16E /* RegexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
