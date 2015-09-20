@@ -64,6 +64,12 @@ class RegexTests: XCTestCase
         expect(regex.matches("_hello_hello")) == ["hello", "hello"]
     }
     
+    func testItReplacesFirstMatch()
+    {
+        let regex = Regex("John")
+        expect(regex.replace("John Smith", with: "Ellen")) == "Ellen Smith"
+    }
+    
     func testItReportsInvalidExpression()
     {
         let regex = Regex("[a-Z]")

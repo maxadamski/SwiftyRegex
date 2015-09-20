@@ -91,6 +91,18 @@ public struct Regex
         return matches
     }
     
+    /// - returns: `string` with the first matching substring replaced by `sub`.
+    public func replace(var string: String, with sub: String) -> String
+    {
+        let match = self.match(string)
+        if match.matches == true && match.range != nil {
+            let s = string.startIndex.advancedBy(match.range!.startIndex)
+            let e = string.startIndex.advancedBy(match.range!.endIndex)
+            string.replaceRange(s..<e, with: sub)
+        }
+        return string
+    }
+    
     /// Checks if given string matches expression.
     public func test(string: String) -> Bool
     {
