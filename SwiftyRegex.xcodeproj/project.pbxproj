@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		5027B9E01BAEDB3E00B1EB2A /* String+SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */; settings = {ASSET_TAGS = (); }; };
 		5027B9E21BAEDE8B00B1EB2A /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */; settings = {ASSET_TAGS = (); }; };
-		5076E8CB1BAE196500B9D16E /* SwiftRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076E8C91BAE196500B9D16E /* SwiftRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5076E8D51BAE198800B9D16E /* SwiftRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8BC1BAE194200B9D16E /* SwiftRegex.framework */; settings = {ASSET_TAGS = (); }; };
+		5076E8CB1BAE196500B9D16E /* SwiftyRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076E8C91BAE196500B9D16E /* SwiftyRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5076E8D51BAE198800B9D16E /* SwiftyRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8BC1BAE194200B9D16E /* SwiftyRegex.framework */; settings = {ASSET_TAGS = (); }; };
 		5076E8DC1BAE19D800B9D16E /* RegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8DB1BAE19D800B9D16E /* RegexTests.swift */; settings = {ASSET_TAGS = (); }; };
 		5076E8DE1BAE1A8800B9D16E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8DD1BAE1A8800B9D16E /* Nimble.framework */; settings = {ASSET_TAGS = (); }; };
 		5076E8E11BAE1AA800B9D16E /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5076E8DD1BAE1A8800B9D16E /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -46,9 +46,9 @@
 		5027B9DE1BAED46600B1EB2A /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = SOURCE_ROOT; };
 		5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftRegex.swift"; sourceTree = "<group>"; };
 		5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
-		5076E8BC1BAE194200B9D16E /* SwiftRegex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftRegex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5076E8BC1BAE194200B9D16E /* SwiftyRegex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyRegex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5076E8C81BAE196500B9D16E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5076E8C91BAE196500B9D16E /* SwiftRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftRegex.h; sourceTree = "<group>"; };
+		5076E8C91BAE196500B9D16E /* SwiftyRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyRegex.h; sourceTree = "<group>"; };
 		5076E8D01BAE198800B9D16E /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5076E8D41BAE198800B9D16E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5076E8DB1BAE19D800B9D16E /* RegexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexTests.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5076E8D51BAE198800B9D16E /* SwiftRegex.framework in Frameworks */,
+				5076E8D51BAE198800B9D16E /* SwiftyRegex.framework in Frameworks */,
 				5076E8DE1BAE1A8800B9D16E /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +91,7 @@
 		5076E8BD1BAE194200B9D16E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5076E8BC1BAE194200B9D16E /* SwiftRegex.framework */,
+				5076E8BC1BAE194200B9D16E /* SwiftyRegex.framework */,
 				5076E8D01BAE198800B9D16E /* Tests.xctest */,
 			);
 			name = Products;
@@ -102,7 +102,7 @@
 			children = (
 				5027B9DE1BAED46600B1EB2A /* Playground.playground */,
 				5076E8C81BAE196500B9D16E /* Info.plist */,
-				5076E8C91BAE196500B9D16E /* SwiftRegex.h */,
+				5076E8C91BAE196500B9D16E /* SwiftyRegex.h */,
 				5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */,
 				50A4AC141BAE369600C1AA4E /* Operators.swift */,
 				5076E8E21BAE1DB900B9D16E /* Regex.swift */,
@@ -128,16 +128,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5076E8CB1BAE196500B9D16E /* SwiftRegex.h in Headers */,
+				5076E8CB1BAE196500B9D16E /* SwiftyRegex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5076E8BB1BAE194200B9D16E /* SwiftRegex */ = {
+		5076E8BB1BAE194200B9D16E /* SwiftyRegex */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5076E8C41BAE194200B9D16E /* Build configuration list for PBXNativeTarget "SwiftRegex" */;
+			buildConfigurationList = 5076E8C41BAE194200B9D16E /* Build configuration list for PBXNativeTarget "SwiftyRegex" */;
 			buildPhases = (
 				5076E8B71BAE194200B9D16E /* Sources */,
 				5076E8B81BAE194200B9D16E /* Frameworks */,
@@ -148,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftRegex;
+			name = SwiftyRegex;
 			productName = SwiftRegex;
-			productReference = 5076E8BC1BAE194200B9D16E /* SwiftRegex.framework */;
+			productReference = 5076E8BC1BAE194200B9D16E /* SwiftyRegex.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5076E8CF1BAE198800B9D16E /* Tests */ = {
@@ -190,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5076E8B61BAE194200B9D16E /* Build configuration list for PBXProject "SwiftRegex" */;
+			buildConfigurationList = 5076E8B61BAE194200B9D16E /* Build configuration list for PBXProject "SwiftyRegex" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -202,7 +202,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5076E8BB1BAE194200B9D16E /* SwiftRegex */,
+				5076E8BB1BAE194200B9D16E /* SwiftyRegex */,
 				5076E8CF1BAE198800B9D16E /* Tests */,
 			);
 		};
@@ -251,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		5076E8D71BAE198800B9D16E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5076E8BB1BAE194200B9D16E /* SwiftRegex */;
+			target = 5076E8BB1BAE194200B9D16E /* SwiftyRegex */;
 			targetProxy = 5076E8D61BAE198800B9D16E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -355,7 +355,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.supercoding.SwiftRegex;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftyRegex;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -375,7 +375,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.supercoding.SwiftRegex;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftyRegex;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -416,7 +416,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5076E8B61BAE194200B9D16E /* Build configuration list for PBXProject "SwiftRegex" */ = {
+		5076E8B61BAE194200B9D16E /* Build configuration list for PBXProject "SwiftyRegex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5076E8C21BAE194200B9D16E /* Debug */,
@@ -425,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5076E8C41BAE194200B9D16E /* Build configuration list for PBXNativeTarget "SwiftRegex" */ = {
+		5076E8C41BAE194200B9D16E /* Build configuration list for PBXNativeTarget "SwiftyRegex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5076E8C51BAE194200B9D16E /* Debug */,

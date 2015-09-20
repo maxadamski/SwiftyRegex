@@ -1,5 +1,5 @@
 
-@testable import SwiftRegex
+@testable import SwiftyRegex
 import Nimble
 import XCTest
 

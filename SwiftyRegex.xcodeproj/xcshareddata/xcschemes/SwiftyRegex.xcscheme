@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5076E8BB1BAE194200B9D16E"
-               BuildableName = "SwiftRegex.framework"
-               BlueprintName = "SwiftRegex"
-               ReferencedContainer = "container:SwiftRegex.xcodeproj">
+               BuildableName = "SwiftyRegex.framework"
+               BlueprintName = "SwiftyRegex"
+               ReferencedContainer = "container:SwiftyRegex.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
                BlueprintIdentifier = "5076E8CF1BAE198800B9D16E"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
-               ReferencedContainer = "container:SwiftRegex.xcodeproj">
+               ReferencedContainer = "container:SwiftyRegex.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5076E8BB1BAE194200B9D16E"
-            BuildableName = "SwiftRegex.framework"
-            BlueprintName = "SwiftRegex"
-            ReferencedContainer = "container:SwiftRegex.xcodeproj">
+            BuildableName = "SwiftyRegex.framework"
+            BlueprintName = "SwiftyRegex"
+            ReferencedContainer = "container:SwiftyRegex.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5076E8BB1BAE194200B9D16E"
-            BuildableName = "SwiftRegex.framework"
-            BlueprintName = "SwiftRegex"
-            ReferencedContainer = "container:SwiftRegex.xcodeproj">
+            BuildableName = "SwiftyRegex.framework"
+            BlueprintName = "SwiftyRegex"
+            ReferencedContainer = "container:SwiftyRegex.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5076E8BB1BAE194200B9D16E"
-            BuildableName = "SwiftRegex.framework"
-            BlueprintName = "SwiftRegex"
-            ReferencedContainer = "container:SwiftRegex.xcodeproj">
+            BuildableName = "SwiftyRegex.framework"
+            BlueprintName = "SwiftyRegex"
+            ReferencedContainer = "container:SwiftyRegex.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
