@@ -1,6 +1,7 @@
 
 import Darwin
 
+/// POSIX Regular Expression wrapper structure.
 public struct Regex
 {
     typealias CMatch = regmatch_t
@@ -15,6 +16,7 @@ public struct Regex
         self.flags = flags
     }
     
+    /// Returns compiled expression
     func compile() -> CRegex
     {
         var cRegex = CRegex()
@@ -28,6 +30,10 @@ public struct Regex
         return cRegex
     }
     
+    /// Checks if given string matches expression.
+    /// - returns:
+    ///     * isMatching - true if string matches expression
+    ///     * range - first matching substring range
     func match(string: String) -> (matches: Bool, range: Range<Int>?)
     {
         var cMatches = [CMatch()]
@@ -53,6 +59,7 @@ public struct Regex
         }
     }
 
+    /// - returns: Matching substring ranges.
     public func ranges(var string: String) -> [Range<Int>]
     {
         var ranges = [Range<Int>]()
@@ -71,6 +78,7 @@ public struct Regex
         return ranges
     }
     
+    /// Checks if given string matches expression.
     public func matches(string: String) -> Bool
     {
         return match(string).matches
