@@ -2,6 +2,10 @@
 
 SwiftyRegex is a regular expression micro framework written in pure Swift. The goal is to make it compatible with Linux and other POSIX compliant systems. Of course don’t use it in apps where you have access to NSRegularExpression.
 
+# Example
+
+See `Playground.playground`
+
 # License
 
 MIT. See the `LICENSE` for details.
