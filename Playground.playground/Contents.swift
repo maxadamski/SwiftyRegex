@@ -1,5 +1,5 @@
 
-import SwiftRegex
+import SwiftyRegex
 
 //: Check if contains one or more alphanumeric words
 var words = "RegEx is tough, but useful."
