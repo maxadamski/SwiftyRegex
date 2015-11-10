@@ -4,7 +4,19 @@ SwiftyRegex is a regular expression micro framework written in pure Swift. The g
 
 # Example
 
-See `Playground.playground`
+```swift
+// Use shorthand operator to test for match
+"http://something.com/users/13/profile" =~ "/users/[0-9]"
+
+// Get matching substrings
+let words = "RegEx is tough, but useful."
+Regex("[a-zA-Z]+").matches(words)
+
+// Replace matching substring
+Regex("<name>").replaceIn("Hi <name>.", with: "Jane")
+```
+
+For more see `Playground.playground`
 
 # License
 
