@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5027B9E01BAEDB3E00B1EB2A /* String+SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */; settings = {ASSET_TAGS = (); }; };
-		5027B9E21BAEDE8B00B1EB2A /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */; settings = {ASSET_TAGS = (); }; };
+		5027B9E01BAEDB3E00B1EB2A /* String+SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9DF1BAEDB3E00B1EB2A /* String+SwiftRegex.swift */; };
+		5027B9E21BAEDE8B00B1EB2A /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */; };
 		5076E8CB1BAE196500B9D16E /* SwiftyRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076E8C91BAE196500B9D16E /* SwiftyRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5076E8D51BAE198800B9D16E /* SwiftyRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8BC1BAE194200B9D16E /* SwiftyRegex.framework */; settings = {ASSET_TAGS = (); }; };
-		5076E8DC1BAE19D800B9D16E /* RegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8DB1BAE19D800B9D16E /* RegexTests.swift */; settings = {ASSET_TAGS = (); }; };
-		5076E8DE1BAE1A8800B9D16E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8DD1BAE1A8800B9D16E /* Nimble.framework */; settings = {ASSET_TAGS = (); }; };
+		5076E8D51BAE198800B9D16E /* SwiftyRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8BC1BAE194200B9D16E /* SwiftyRegex.framework */; };
+		5076E8DC1BAE19D800B9D16E /* RegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8DB1BAE19D800B9D16E /* RegexTests.swift */; };
+		5076E8DE1BAE1A8800B9D16E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076E8DD1BAE1A8800B9D16E /* Nimble.framework */; };
 		5076E8E11BAE1AA800B9D16E /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5076E8DD1BAE1A8800B9D16E /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5076E8E31BAE1DB900B9D16E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8E21BAE1DB900B9D16E /* Regex.swift */; settings = {ASSET_TAGS = (); }; };
-		5076E8E51BAE1DE500B9D16E /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8E41BAE1DE500B9D16E /* Flags.swift */; settings = {ASSET_TAGS = (); }; };
-		50A4AC151BAE369600C1AA4E /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4AC141BAE369600C1AA4E /* Operators.swift */; settings = {ASSET_TAGS = (); }; };
+		5076E8E31BAE1DB900B9D16E /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8E21BAE1DB900B9D16E /* Regex.swift */; };
+		5076E8E51BAE1DE500B9D16E /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076E8E41BAE1DE500B9D16E /* Flags.swift */; };
+		50A4AC151BAE369600C1AA4E /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A4AC141BAE369600C1AA4E /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +56,7 @@
 		5076E8E21BAE1DB900B9D16E /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		5076E8E41BAE1DE500B9D16E /* Flags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
 		50A4AC141BAE369600C1AA4E /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		50ECFCC91BF29CA700B6C810 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +82,7 @@
 		5076E8B21BAE194200B9D16E = {
 			isa = PBXGroup;
 			children = (
-				5076E8DD1BAE1A8800B9D16E /* Nimble.framework */,
+				50ECFCC81BF29C9600B6C810 /* Frameworks */,
 				5076E8BD1BAE194200B9D16E /* Products */,
 				5076E8D11BAE198800B9D16E /* Tests */,
 				5076E8C71BAE196500B9D16E /* Source */,
@@ -119,6 +120,15 @@
 				5027B9E11BAEDE8B00B1EB2A /* StringTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		50ECFCC81BF29C9600B6C810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50ECFCC91BF29CA700B6C810 /* Cartfile.private */,
+				5076E8DD1BAE1A8800B9D16E /* Nimble.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

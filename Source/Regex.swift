@@ -31,7 +31,7 @@ public struct Regex
     
     /// Checks if given string matches expression.
     /// - returns:
-    ///     * isMatching - true if string matches expression
+    ///     * matches - true if string matches expression
     ///     * range - first matching substring range
     func match(string: String) -> (matches: Bool, range: Range<Int>?)
     {
