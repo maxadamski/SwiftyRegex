@@ -12,12 +12,12 @@ wordsMatcher.matches(words)
 //: Replace one matching substring
 var greeting = "Hi <name>."
 let nameMatcher = Regex("<name>")
-nameMatcher.replace(greeting, with: "Jane")
+nameMatcher.replaceIn(greeting, with: "Jane")
 
 //: Replace all matching substrings
 var color = "I like color, color is my favourite."
 var blueMatcher = Regex("color")
-blueMatcher.replaceAll(color, with: "green")
+blueMatcher.replaceAllIn(color, with: "green")
 
 //: Use shorthand operator to test for match
 "http://something.com/users/13/profile" =~ "/users/[0-9]"

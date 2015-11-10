@@ -85,7 +85,7 @@ public struct Regex
     }
     
     /// - returns: `string` with the first matching substring replaced by `sub`.
-    public func replace(var string: String, with sub: String) -> String
+    public func replaceIn(var string: String, with sub: String) -> String
     {
         let match = self.match(string)
         if match.matches == true && match.range != nil {
@@ -95,7 +95,7 @@ public struct Regex
     }
     
     /// - returns: `string` with all matching substrings replaced by `sub`.
-    public func replaceAll(var string: String, with sub: String) -> String
+    public func replaceAllIn(var string: String, with sub: String) -> String
     {
         for r in ranges(string) {
             string.replaceRange(r, with: sub)

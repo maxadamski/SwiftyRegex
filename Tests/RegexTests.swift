@@ -67,13 +67,13 @@ class RegexTests: XCTestCase
     func testItReplacesFirstMatch()
     {
         let regex = Regex("John")
-        expect(regex.replace("John Smith", with: "Ellen")) == "Ellen Smith"
+        expect(regex.replaceIn("John Smith", with: "Ellen")) == "Ellen Smith"
     }
     
     func testItReplacesAllMatches()
     {
         let regex = Regex("2")
-        expect(regex.replaceAll("102022", with: "1")) == "101011"
+        expect(regex.replaceAllIn("102022", with: "1")) == "101011"
     }
     
     func testItReportsInvalidExpression()
