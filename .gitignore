@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/osx,linux,windows,swift,carthage,appcode
 
+SwiftyRegex.framework.zip
+
 ### OSX ###
 .DS_Store
 .AppleDouble
